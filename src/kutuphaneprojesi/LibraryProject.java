@@ -12,6 +12,7 @@ public class LibraryProject {
 	static List<String> ktpF = new ArrayList<>();
 	static int secim;
 
+	
 	public static void main(String[] args) {
 		
 		listele();
@@ -34,6 +35,7 @@ public class LibraryProject {
 
 	}
 
+	
 	private static void secim() {
 		Scanner scan = new Scanner(System.in);
 		secim = scan.nextInt();
@@ -75,8 +77,10 @@ public class LibraryProject {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("------------L›STEDEN S›LMEK ›STED›–›N K›TABI SE«----------");
 		int count=1001;
+		
 		System.out.println("\nNO:\t›S›M:\t\t\tYAZAR ADI:   \t\t\tYAYIN YILI:  \tF›YATI:");
 		System.out.println("------\t------\t\t\t--------\t\t\t------\t\t------");
+		
 		for (int i = 0; i < ktpA.size(); i++) {
 		
 			System.out.println(count+"\t"+ ktpA.get(i)+"\t\t\t"+yzrA.get(i)+"\t\t\t\t"+yynY.get(i)+"\t\t"+ktpF.get(i));
@@ -86,6 +90,7 @@ public class LibraryProject {
 		
 		System.out.println("silmek istediin kitap no gir ");
 		int count2=1001;
+		
 		int silNo=scan.nextInt()-count2;
 		
 		if(silNo>=0 && silNo<ktpA.size()) {
@@ -111,7 +116,7 @@ public class LibraryProject {
 		if(ktpGoster>=0 &&ktpGoster<ktpA.size() ) {
 			System.out.println("SeÁtiini kitap: " + (ktpGoster+count)+"\t"+ktpA.get(ktpGoster)+"\t"+yzrA.get(ktpGoster)+"\t"+yynY.get(ktpGoster)+"\t"+ktpF.get(ktpGoster));
 		}
-	}
+}
 	
 //----------------------------------------------------------------------------------------------------------------------------------------
 
@@ -128,16 +133,6 @@ public class LibraryProject {
 		
 		
 	}
-
-
-
-
-
-
-
-
-
-
 
 
 }
