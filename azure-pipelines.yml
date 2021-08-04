@@ -1,4 +1,7 @@
 # Docker
+- task: Npm@1
+  inputs:
+    command: 'install'
 # Build a Docker image
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
